@@ -1,3 +1,9 @@
+/*
+   Time Complexity :- Worst Case :- O(n^2) || Best Case :- O(n)
+   Space Complexity :- O(1)
+
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -11,9 +17,9 @@ void printarray(int arr[], int n)
 
 void bsort(int arr[], int n)
 {
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++) // Showing Rounds
     {
-        for (int j = 0; j < n - i; i++)
+        for (int j = 0; j < n - i; i++) // Processing the elements
         {
             if (arr[j] > arr[j + 1])
             {

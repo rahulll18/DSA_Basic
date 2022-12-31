@@ -1,3 +1,5 @@
+// Time Complexity :- Worst Case O(n^2)  || Best Case O(n^2)
+// Spzce Complexity :- O(1)
 #include <iostream>
 using namespace std;
 
@@ -5,7 +7,7 @@ void printarray(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i];
+        cout << arr[i] << " ";
     }
 }
 
@@ -16,7 +18,7 @@ void selectionarray(int arr[], int n)
         int minindex = i;
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[j] < arr[minindex])
+            if (arr[minindex] > arr[j])
             {
                 minindex = j;
             }

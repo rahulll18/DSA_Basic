@@ -15,7 +15,7 @@ int main(){
     int *p1 = 0;
     p1 = &i;
 
-    cout << "Before " << *p1 << endl;
+    cout << "Before " << *p1 << endl; 
     (*p1)++;
     cout << "After " << *p1 << endl;
 
